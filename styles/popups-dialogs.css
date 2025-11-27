@@ -1,0 +1,423 @@
+/* ==================== SWEETALERT2 CUSTOMIZATION ==================== */
+.swal2-popup {
+  width: min(900px, 95vw) !important;
+  max-width: 95vw !important;
+  padding: 15px !important;
+  max-height: 92vh !important;
+  overflow-y: auto !important;
+  margin: 0 !important;
+}
+
+.swal2-title {
+  font-size: clamp(1em, 4vw, 1.8em) !important;
+  line-height: 1.2 !important;
+  margin: 0 0 10px 0 !important;
+  padding: 8px !important;
+}
+
+.swal2-html-container {
+  max-height: 75vh !important;
+  overflow-y: auto !important;
+  margin: 0 !important;
+  padding: 5px !important;
+}
+
+.answer-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-top: 15px;
+  width: 100%;
+  padding: 0 5px;
+}
+
+.swal-option-btn {
+  font-size: clamp(0.85em, 2.2vw, 1.1em);
+  font-weight: bold;
+  padding: 12px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  color: #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 55px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.swal-option-btn:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  border-color: #333;
+}
+
+.swal-option-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.swal-q-header {
+  font-size: clamp(0.9em, 2.5vw, 1.3em);
+  font-weight: bold;
+  color: #1976d2;
+  margin-bottom: 8px;
+  padding: 8px;
+  background: rgba(25, 118, 210, 0.1);
+  border-radius: 8px;
+}
+
+.swal-q-text {
+  font-size: clamp(1em, 3vw, 1.5em);
+  font-weight: bold;
+  margin: 12px 0;
+  line-height: 1.3;
+  color: #333;
+  word-wrap: break-word;
+  padding: 0 5px;
+}
+
+/* ==================== BOT CHALLENGE BOX ==================== */
+.bot-challenge-box {
+  background: linear-gradient(135deg, #FF6F00, #FFB300);
+  padding: 10px;
+  border-radius: 12px;
+  margin: 10px 0;
+  box-shadow: 0 6px 20px rgba(255, 152, 0, 0.4);
+  animation: bot-glow 2s infinite;
+}
+
+.bot-icon-large {
+  font-size: clamp(35px, 8vw, 60px);
+  animation: robot-bounce 1.5s infinite;
+  margin-bottom: 5px;
+}
+
+@keyframes bot-glow {
+  0%, 100% {
+    box-shadow: 0 6px 20px rgba(255, 152, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 8px 30px rgba(255, 193, 7, 0.6);
+  }
+}
+
+@keyframes robot-bounce {
+  0%, 100% { transform: translateY(0) rotate(-5deg); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+.bot-challenge-box h3 {
+  color: white;
+  font-size: clamp(1em, 2.5vw, 1.4em);
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* ==================== READING TEXT DISPLAY ==================== */
+.reading-text {
+  font-size: clamp(1em, 3vw, 1.6em);
+  font-weight: 600;
+  color: #1976d2;
+  background: rgba(33, 150, 243, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  border: 3px solid #42a5f5;
+  margin: 12px 0;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  word-wrap: break-word;
+  max-height: 35vh;
+  overflow-y: auto;
+}
+
+/* ==================== AUDIO SETTINGS DIALOG ==================== */
+.audio-setting-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: rgba(33, 150, 243, 0.05);
+  border-radius: 8px;
+}
+
+.audio-setting-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  color: #333;
+  min-width: 150px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.audio-setting-label input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.audio-setting-item input[type="range"] {
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: #ddd;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.audio-setting-item input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #1976d2;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.audio-setting-item input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #1976d2;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.audio-setting-item input[type="range"]:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.audio-setting-item span {
+  min-width: 45px;
+  text-align: right;
+  font-weight: bold;
+  color: #1976d2;
+  font-size: 0.9em;
+}
+
+/* ==================== RESPONSIVE POPUPS ==================== */
+@media (max-width: 768px) and (orientation: portrait) {
+  .swal2-popup {
+    width: 96vw !important;
+    padding: 12px !important;
+    max-height: 94vh !important;
+  }
+  
+  .swal2-title {
+    font-size: 1.1em !important;
+    padding: 6px !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .swal2-html-container {
+    padding: 3px !important;
+  }
+  
+  .answer-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 10px;
+    padding: 0 3px;
+  }
+  
+  .swal-option-btn {
+    min-height: 48px;
+    padding: 10px 6px;
+    font-size: 0.85em;
+  }
+  
+  .swal-q-header {
+    font-size: 0.9em;
+    padding: 6px;
+    margin-bottom: 6px;
+  }
+  
+  .swal-q-text {
+    font-size: 0.95em;
+    margin: 10px 0;
+    padding: 0 3px;
+  }
+  
+  .bot-challenge-box {
+    padding: 10px;
+    margin: 8px 0;
+  }
+  
+  .bot-icon-large {
+    font-size: 35px;
+    margin-bottom: 4px;
+  }
+  
+  .bot-challenge-box h3 {
+    font-size: 1em;
+  }
+  
+  .reading-text {
+    padding: 12px;
+    max-height: 30vh;
+    font-size: 0.95em;
+    line-height: 1.4;
+  }
+  
+  .swal-q-text,
+  .reading-text {
+    line-height: 1.5 !important;
+    word-spacing: 0.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .swal2-popup {
+    width: 98vw !important;
+    padding: 10px !important;
+    max-height: 95vh !important;
+  }
+  
+  .swal2-title {
+    font-size: 1em !important;
+    padding: 5px !important;
+    margin-bottom: 6px !important;
+  }
+  
+  .swal2-html-container {
+    padding: 2px !important;
+  }
+  
+  .swal-q-header {
+    font-size: 0.85em;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .swal-q-text {
+    font-size: 0.9em;
+    margin: 8px 0;
+    line-height: 1.3;
+  }
+  
+  .answer-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    margin-top: 8px;
+    padding: 0 2px;
+  }
+  
+  .swal-option-btn {
+    min-height: 45px;
+    padding: 8px 5px;
+    font-size: 0.8em;
+    border-radius: 8px;
+  }
+  
+  .reading-text {
+    font-size: 0.9em;
+    padding: 10px;
+    max-height: 28vh;
+    line-height: 1.3;
+  }
+  
+  .bot-challenge-box {
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 10px;
+  }
+  
+  .bot-icon-large {
+    font-size: 30px;
+    margin-bottom: 3px;
+  }
+  
+  .bot-challenge-box h3 {
+    font-size: 0.95em;
+  }
+  
+  .swal-option-btn {
+    min-height: 48px !important;
+    padding: 12px 8px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .answer-row {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .swal-option-btn {
+    min-height: 42px;
+    padding: 10px 8px;
+  }
+  
+  .swal2-popup {
+    padding: 8px !important;
+  }
+  
+  .reading-text {
+    font-size: 0.85em;
+    padding: 8px;
+    max-height: 25vh;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .swal2-popup {
+    max-height: 90vh !important;
+  }
+  
+  .reading-text {
+    max-height: 25vh;
+    font-size: 0.9em;
+  }
+  
+  .swal2-html-container {
+    max-height: 65vh !important;
+  }
+}
+
+@media (max-width: 896px) and (orientation: landscape) {
+  .swal2-popup {
+    max-height: 90vh !important;
+  }
+  
+  .reading-text {
+    max-height: 25vh;
+    font-size: 0.9em;
+  }
+  
+  .bot-challenge-box {
+    padding: 8px;
+    margin: 6px 0;
+  }
+  
+  .bot-icon-large {
+    font-size: 32px;
+  }
+  
+  .answer-row {
+    gap: 8px;
+    margin-top: 8px;
+  }
+  
+  .swal-option-btn {
+    min-height: 42px;
+    padding: 8px 6px;
+    font-size: 0.85em;
+  }
+}
+
+@media (prefers-contrast: more) {
+  .bot-challenge-box {
+    border: 3px solid #000;
+  }
+}

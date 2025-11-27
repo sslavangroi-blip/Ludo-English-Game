@@ -1,0 +1,75 @@
+/* ==================== ORIENTATION WARNING ==================== */
+/* Portrait mode overlay warning for mobile devices */
+@media (max-width: 768px) and (orientation: portrait) {
+  #orientationWarning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #orientationWarning h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #FFD700;
+  }
+  
+  #orientationWarning p {
+    font-size: 16px;
+    color: #ccc;
+    margin-top: 10px;
+  }
+  
+  @keyframes rotate-phone {
+    0%, 100% { 
+      transform: rotate(0deg); 
+    }
+    25% { 
+      transform: rotate(-90deg); 
+    }
+    75% { 
+      transform: rotate(-90deg); 
+    }
+  }
+}
+
+/* Hide orientation warning in landscape */
+@media (orientation: landscape) {
+  #orientationWarning {
+    display: none !important;
+  }
+}
+
+/* Desktop and large tablets - no orientation warning */
+@media (min-width: 769px) {
+  #orientationWarning {
+    display: none !important;
+  }
+}
+
+/* Ensure game is playable in landscape */
+@media (max-width: 768px) and (orientation: landscape) {
+  body {
+    overflow: hidden;
+  }
+  
+  #game-container {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  #board {
+    width: 98vw;
+    height: 94vh;
+  }
+}

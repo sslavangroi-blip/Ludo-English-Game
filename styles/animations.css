@@ -1,0 +1,134 @@
+/* ==================== ANIMATIONS ==================== */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pulse Speaking Animation */
+@keyframes pulse-speaking {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+  }
+  50% {
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.8);
+  }
+}
+
+/* Pulse Recording Animation */
+@keyframes pulse-recording {
+  0%, 100% { 
+    box-shadow: 0 4px 15px rgba(229, 57, 53, 0.4);
+  }
+  50% { 
+    box-shadow: 0 6px 25px rgba(229, 57, 53, 0.8);
+  }
+}
+
+/* Pulse Start Cell Animation */
+@keyframes pulse-start {
+  0%, 100% { 
+    box-shadow: 
+      0 0 20px rgba(76, 175, 80, 0.6),
+      0 4px 15px rgba(46, 125, 50, 0.4),
+      inset 0 2px 6px rgba(255, 255, 255, 0.4);
+  }
+  50% { 
+    box-shadow: 
+      0 0 30px rgba(76, 175, 80, 0.9),
+      0 6px 20px rgba(46, 125, 50, 0.6),
+      inset 0 2px 6px rgba(255, 255, 255, 0.6);
+  }
+}
+
+/* Bounce Flag Animation */
+@keyframes bounce-flag {
+  0%, 100% { 
+    transform: translateY(0) scale(1); 
+  }
+  50% { 
+    transform: translateY(-5px) scale(1.1); 
+  }
+}
+
+/* Pulse Bot Cell Animation */
+@keyframes pulse-bot {
+  0% { 
+    transform: scale(1); 
+    box-shadow: 
+      0 0 25px rgba(255, 152, 0, 0.8),
+      0 4px 15px rgba(245, 124, 0, 0.6);
+  }
+  50% { 
+    transform: scale(1.08); 
+    box-shadow: 
+      0 0 40px rgba(255, 193, 7, 1),
+      0 6px 20px rgba(255, 152, 0, 0.8);
+  }
+  100% { 
+    transform: scale(1); 
+    box-shadow: 
+      0 0 25px rgba(255, 152, 0, 0.8),
+      0 4px 15px rgba(245, 124, 0, 0.6);
+  }
+}
+
+/* Robot Shake Animation */
+@keyframes robot-shake {
+  0%, 100% { 
+    transform: rotate(-3deg); 
+  }
+  50% { 
+    transform: rotate(3deg); 
+  }
+}
+
+/* Bot Glow Animation */
+@keyframes bot-glow {
+  0%, 100% {
+    box-shadow: 0 6px 20px rgba(255, 152, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 8px 30px rgba(255, 193, 7, 0.6);
+  }
+}
+
+/* Robot Bounce Animation */
+@keyframes robot-bounce {
+  0%, 100% { 
+    transform: translateY(0) rotate(-5deg); 
+  }
+  50% { 
+    transform: translateY(-10px) rotate(5deg); 
+  }
+}
+
+/* Timer Urgent Animation */
+@keyframes timer-urgent {
+  from {
+    background: linear-gradient(135deg, rgba(229, 57, 53, 0.2), rgba(244, 67, 54, 0.3));
+  }
+  to {
+    background: linear-gradient(135deg, rgba(229, 57, 53, 0.4), rgba(244, 67, 54, 0.5));
+  }
+}
+
+/* Rotate Phone Animation */
+@keyframes rotate-phone {
+  0%, 100% { 
+    transform: rotate(0deg); 
+  }
+  25% { 
+    transform: rotate(-90deg); 
+  }
+  75% { 
+    transform: rotate(-90deg); 
+  }
+}

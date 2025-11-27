@@ -1,0 +1,530 @@
+/* ==================== DICE AREA ==================== */
+#dice-area {
+  text-align: center;
+}
+
+#dice {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 10px auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.dot {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: red;
+}
+
+#rollBtn {
+  padding: 12px 25px;
+  background: #4caf50;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+}
+
+#rollBtn:hover:not(:disabled) {
+  background: #66bb6a;
+  transform: scale(1.05);
+}
+
+#rollBtn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+#turnDisplay {
+  color: #ff9800;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+#rollResult {
+  color: #2196f3;
+  font-size: 1em;
+  font-weight: bold;
+  display: none;
+  margin-top: 8px;
+}
+
+/* ==================== GAME CONTROLS ==================== */
+.game-controls {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  z-index: 9998;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.quit-game-btn {
+  background: linear-gradient(135deg, #f44336, #d32f2f);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(244, 67, 54, 0.4);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quit-game-btn:hover {
+  background: linear-gradient(135deg, #e57373, #c62828);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(244, 67, 54, 0.5);
+}
+
+.quit-game-btn:active {
+  transform: translateY(0);
+}
+
+.voice-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.control-btn {
+  background: linear-gradient(135deg, #ffffff, #f5f5f5);
+  color: #333;
+  border: 2px solid #1976d2;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.3em;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control-btn:hover {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(25, 118, 210, 0.4);
+}
+
+.control-btn:active {
+  transform: scale(0.95);
+}
+
+/* Turn Timer Display */
+#turnTimerDisplay {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #1976d2;
+  margin: 5px 0;
+  padding: 8px 12px;
+  background: linear-gradient(135deg, rgba(25, 118, 210, 0.1), rgba(33, 150, 243, 0.15));
+  border-radius: 10px;
+  display: inline-block;
+  border: 2px solid rgba(25, 118, 210, 0.3);
+}
+
+#turnTimerDisplay[style*="color: rgb(229, 57, 53)"] {
+  animation: timer-urgent 0.5s infinite alternate;
+}
+
+@keyframes timer-urgent {
+  from {
+    background: linear-gradient(135deg, rgba(229, 57, 53, 0.2), rgba(244, 67, 54, 0.3));
+  }
+  to {
+    background: linear-gradient(135deg, rgba(229, 57, 53, 0.4), rgba(244, 67, 54, 0.5));
+  }
+}
+
+/* Fullscreen Button */
+#fullscreenBtn {
+  position: fixed;
+  top: 70px;
+  right: 10px;
+  z-index: 9999;
+  background: rgba(25, 118, 210, 0.9);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#fullscreenBtn:hover {
+  background: rgba(33, 150, 243, 1);
+  transform: scale(1.05);
+}
+
+#fullscreenBtn:active {
+  transform: scale(0.95);
+}
+
+/* ==================== RESPONSIVE CONTROLS ==================== */
+@media (max-width: 1024px) and (orientation: portrait) {
+  .game-controls {
+    flex-wrap: wrap;
+  }
+  
+  .control-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1em;
+  }
+  
+  #fullscreenBtn {
+    top: 60px;
+  }
+  
+  #dice {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 896px) and (orientation: landscape) {
+  #dice {
+    width: 60px;
+    height: 60px;
+  }
+  
+  #rollBtn {
+    padding: 10px 18px;
+    font-size: 0.95em;
+  }
+  
+  #turnDisplay {
+    font-size: 0.9em;
+  }
+  
+  .game-controls {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+  }
+  
+  .quit-game-btn {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+  
+  .control-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 1.1em;
+  }
+  
+  #fullscreenBtn {
+    top: 55px;
+    padding: 8px 12px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  #dice {
+    width: 58px;
+    height: 58px;
+    gap: 3px;
+    padding: 5px;
+  }
+  
+  #rollBtn {
+    padding: 10px 18px;
+    font-size: 0.9em;
+  }
+  
+  #turnDisplay {
+    font-size: 0.85em;
+  }
+  
+  #rollResult {
+    font-size: 0.8em;
+  }
+  
+  .game-controls {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    gap: 8px;
+  }
+  
+  .quit-game-btn {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+  
+  .control-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 1.1em;
+  }
+  
+  #turnTimerDisplay {
+    font-size: 0.9em;
+    padding: 4px 8px;
+  }
+  
+  #fullscreenBtn {
+    top: 55px;
+    right: 5px;
+    padding: 8px 12px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  #dice {
+    width: 50px;
+    height: 50px;
+  }
+  
+  #rollBtn {
+    padding: 8px 15px;
+    font-size: 0.85em;
+  }
+  
+  #turnDisplay {
+    font-size: 0.75em;
+  }
+  
+  #fullscreenBtn {
+    padding: 8px 10px;
+    font-size: 0.95em;
+    top: 50px;
+    right: 5px;
+  }
+  
+  .game-controls {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    gap: 6px;
+  }
+  
+  .quit-game-btn {
+    padding: 6px 12px;
+    font-size: 0.8em;
+  }
+  
+  .control-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 1em;
+  }
+  
+  #turnTimerDisplay {
+    font-size: 0.85em;
+    padding: 3px 6px;
+  }
+}
+
+@media (max-width: 812px) and (orientation: landscape) and (max-height: 420px) {
+  #dice {
+    width: 48px;
+    height: 48px;
+  }
+  
+  #rollBtn {
+    padding: 6px 14px;
+    font-size: 0.8em;
+  }
+  
+  #turnDisplay {
+    font-size: 0.75em;
+  }
+  
+  #turnTimerDisplay {
+    font-size: 0.8em;
+    padding: 3px 6px;
+  }
+  
+  .game-controls {
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    gap: 4px;
+  }
+  
+  .quit-game-btn {
+    padding: 5px 10px;
+    font-size: 0.75em;
+  }
+  
+  .control-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9em;
+  }
+  
+  #fullscreenBtn {
+    top: 45px;
+    padding: 5px 8px;
+    font-size: 0.85em;
+  }
+}
+
+@media (max-height: 400px) and (orientation: landscape) {
+  #dice {
+    width: 45px;
+    height: 45px;
+    gap: 2px;
+  }
+  
+  #rollBtn {
+    padding: 5px 12px;
+    font-size: 0.75em;
+  }
+  
+  #turnDisplay {
+    font-size: 0.7em;
+    margin: 3px 0;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  #dice {
+    width: 55px;
+    height: 55px;
+    gap: 3px;
+  }
+  
+  #rollBtn {
+    padding: 8px 16px;
+    font-size: 0.85em;
+  }
+  
+  #turnDisplay {
+    font-size: 0.8em;
+    margin: 5px 0;
+  }
+  
+  #turnTimerDisplay {
+    font-size: 0.85em;
+    padding: 4px 8px;
+  }
+  
+  .game-controls {
+    gap: 6px;
+  }
+  
+  .quit-game-btn {
+    padding: 6px 12px;
+    font-size: 0.8em;
+  }
+  
+  .control-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 1em;
+  }
+  
+  #fullscreenBtn {
+    top: 50px;
+    padding: 6px 10px;
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 813px) and (max-width: 896px) and (orientation: landscape) {
+  #dice {
+    width: 62px;
+    height: 62px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #dice {
+    width: 68px;
+    height: 68px;
+  }
+  
+  .control-btn {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    font-size: 14px;
+  }
+  
+  #dice {
+    width: 45px;
+    height: 45px;
+  }
+  
+  #rollBtn {
+    padding: 6px 12px;
+    font-size: 0.75em;
+  }
+}
+
+@media (max-width: 768px) {
+  #dice {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  
+  button {
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    min-height: 44px !important;
+  }
+}
+
+.voice-controls {
+  z-index: 9999;
+}
+
+@supports (padding: env(safe-area-inset-top)) {
+  #fullscreenBtn {
+    top: max(70px, calc(env(safe-area-inset-top) + 70px));
+    right: max(10px, env(safe-area-inset-right));
+  }
+  
+  .game-controls {
+    top: max(10px, env(safe-area-inset-top));
+    left: max(10px, env(safe-area-inset-left));
+    right: max(10px, env(safe-area-inset-right));
+  }
+}
+
+@supports (padding: max(0px)) {
+  @media (max-width: 812px) and (orientation: landscape) {
+    .game-controls {
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
+    }
+  }
+}
