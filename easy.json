@@ -1,0 +1,718 @@
+{
+  "mcq": [
+    {
+      "question": "Mary is from France. Where is Mary from?",
+      "options": ["France", "Japan", "China", "Italy"],
+      "answer": 0
+    },
+    {
+      "question": "They play football after school. What do they do after school?",
+      "options": ["Play football", "Do homework", "Read books", "Go home"],
+      "answer": 0
+    },
+    {
+      "question": "Which one is a color?",
+      "options": ["Blue", "Big", "Hot", "Fast"],
+      "answer": 0
+    },
+    {
+      "question": "She ___ not like coffee.",
+      "options": ["do", "does", "did", "done"],
+      "answer": 1
+    },
+    {
+      "question": "I ___ a book yesterday.",
+      "options": ["read", "reads", "reading", "readed"],
+      "answer": 0
+    },
+    {
+      "question": "The weather is cold today. How is the weather?",
+      "options": ["Cold", "Hot", "Rainy", "Windy"],
+      "answer": 0
+    },
+    {
+      "question": "My father works in a bank. Where does my father work?",
+      "options": ["At home", "In a bank", "At school", "In a shop"],
+      "answer": 1
+    },
+    {
+      "question": "Which one do we wear?",
+      "options": ["Shirt", "Table", "Window", "Book"],
+      "answer": 0
+    },
+    {
+      "question": "Which one is used to write?",
+      "options": ["Pen", "Chair", "Table", "Book"],
+      "answer": 0
+    },
+    {
+      "question": "He ___ to school every day.",
+      "options": ["go", "goes", "going", "gone"],
+      "answer": 1
+    },
+    {
+      "question": "Which one is a fruit?",
+      "options": ["Apple", "Carrot", "Potato", "Bread"],
+      "answer": 0
+    },
+    {
+      "question": "Tom likes apples. What does Tom like?",
+      "options": ["Apples", "Bananas", "Oranges", "Grapes"],
+      "answer": 0
+    },
+    {
+      "question": "We ___ go to the park on Sundays.",
+      "options": ["usually", "sometimes", "never", "always"],
+      "answer": 0
+    },
+    {
+      "question": "They ___ playing football now.",
+      "options": ["is", "are", "was", "be"],
+      "answer": 1
+    },
+    {
+      "question": "Which one can fly?",
+      "options": ["Bird", "Dog", "Cat", "Fish"],
+      "answer": 0
+    },
+    {
+      "question": "What is the capital of Japan?",
+      "options": ["Beijing", "Seoul", "Tokyo", "Bangkok"],
+      "answer": 2
+    },
+    {
+      "question": "___ you a student?",
+      "options": ["Is", "Am", "Are", "Do"],
+      "answer": 2
+    },
+    {
+      "question": "I have ___ cat and two dogs.",
+      "options": ["a", "an", "the", "some"],
+      "answer": 0
+    },
+    {
+      "question": "The books are ___ the shelf.",
+      "options": ["in", "at", "on", "with"],
+      "answer": 2
+    },
+    {
+      "question": "What time ___ you get up?",
+      "options": ["do", "does", "is", "are"],
+      "answer": 0
+    },
+    {
+      "question": "My sister ___ a doctor.",
+      "options": ["is", "am", "are", "be"],
+      "answer": 0
+    },
+    {
+      "question": "Can you help me? Yes, I ___.",
+      "options": ["do", "am", "can", "is"],
+      "answer": 2
+    },
+    {
+      "question": "How ___ brothers do you have?",
+      "options": ["much", "many", "old", "long"],
+      "answer": 1
+    },
+    {
+      "question": "I ___ to the cinema last night.",
+      "options": ["go", "goes", "went", "gone"],
+      "answer": 2
+    },
+    {
+      "question": "This is ___ expensive car.",
+      "options": ["a", "an", "the", "some"],
+      "answer": 1
+    },
+    {
+      "question": "The opposite of 'happy' is ___.",
+      "options": ["Angry", "Sad", "Tired", "Excited"],
+      "answer": 1
+    },
+    {
+      "question": "We eat dinner in the ___.",
+      "options": ["morning", "afternoon", "evening", "night"],
+      "answer": 2
+    },
+    {
+      "question": "A tiger is a ___ animal.",
+      "options": ["domestic", "wild", "small", "slow"],
+      "answer": 1
+    },
+    {
+      "question": "___ is your birthday?",
+      "options": ["What", "Where", "When", "Who"],
+      "answer": 2
+    },
+    {
+      "question": "She ___ her homework at the moment.",
+      "options": ["do", "does", "is doing", "did"],
+      "answer": 2
+    },
+    {
+      "question": "The plural of 'mouse' is ___.",
+      "options": ["mouses", "mice", "mices", "mouse"],
+      "answer": 1
+    },
+    {
+      "question": "I am interested ___ history.",
+      "options": ["on", "at", "in", "for"],
+      "answer": 2
+    },
+    {
+      "question": "He is taller ___ his brother.",
+      "options": ["that", "than", "then", "this"],
+      "answer": 1
+    },
+    {
+      "question": "A chef is a person who ___.",
+      "options": ["sings", "drives", "cooks", "teaches"],
+      "answer": 2
+    },
+    {
+      "question": "You should ___ your hands before eating.",
+      "options": ["wash", "read", "write", "open"],
+      "answer": 0
+    },
+    {
+      "question": "There ___ any milk in the fridge.",
+      "options": ["are", "is", "isn't", "aren't"],
+      "answer": 2
+    },
+    {
+      "question": "What's the ___? You look worried.",
+      "options": ["time", "problem", "matter", "day"],
+      "answer": 2
+    },
+    {
+      "question": "I'm looking forward ___ you.",
+      "options": ["to see", "seeing", "see", "to seeing"],
+      "answer": 3
+    },
+    {
+      "question": "Let's meet ___ Friday morning.",
+      "options": ["in", "at", "on", "by"],
+      "answer": 2
+    },
+    {
+      "question": "The past tense of 'eat' is ___.",
+      "options": ["eated", "ate", "eaten", "eat"],
+      "answer": 1
+    },
+    {
+      "question": "Which month has 28 or 29 days?",
+      "options": ["January", "February", "March", "April"],
+      "answer": 1
+    },
+    {
+      "question": "A ___ is a place where you buy medicine.",
+      "options": ["Bakery", "Butcher", "Pharmacy", "Library"],
+      "answer": 2
+    },
+    {
+      "question": "The music is too ___. I can't hear you.",
+      "options": ["quiet", "soft", "loud", "low"],
+      "answer": 2
+    },
+    {
+      "question": "___ phone is this?",
+      "options": ["Who", "Whose", "Who's", "Whom"],
+      "answer": 1
+    },
+    {
+      "question": "We use a ___ to cut paper.",
+      "options": ["pen", "ruler", "scissors", "glue"],
+      "answer": 2
+    },
+    {
+      "question": "She is the ___ student in the class.",
+      "options": ["smart", "smarter", "more smart", "smartest"],
+      "answer": 3
+    },
+    {
+      "question": "I have been waiting ___ an hour.",
+      "options": ["since", "for", "at", "in"],
+      "answer": 1
+    },
+    {
+      "question": "If it ___, we will stay at home.",
+      "options": ["rain", "rains", "will rain", "rained"],
+      "answer": 1
+    },
+    {
+      "question": "The opposite of 'strong' is ___.",
+      "options": ["Big", "Weak", "Long", "Hard"],
+      "answer": 1
+    },
+    {
+      "question": "What do you call your mother's sister?",
+      "options": ["Aunt", "Uncle", "Cousin", "Niece"],
+      "answer": 0
+    },
+    {
+      "question": "Could you speak more ___, please?",
+      "options": ["slow", "slower", "slowly", "slowest"],
+      "answer": 2
+    },
+    {
+      "question": "My birthday is ___ the 5th of May.",
+      "options": ["in", "at", "on", "of"],
+      "answer": 2
+    },
+    {
+      "question": "An elephant is ___ than a mouse.",
+      "options": ["big", "bigger", "biggest", "more big"],
+      "answer": 1
+    },
+    {
+      "question": "A place where you can see many old things is a ___.",
+      "options": ["cinema", "museum", "hospital", "station"],
+      "answer": 1
+    },
+    {
+      "question": "I'm thirsty. I'd like to ___ some water.",
+      "options": ["eat", "drink", "read", "play"],
+      "answer": 1
+    },
+    {
+      "question": "Turn off the lights when you ___ the room.",
+      "options": ["enter", "leave", "clean", "see"],
+      "answer": 1
+    },
+    {
+      "question": "He is from Germany. He is ___.",
+      "options": ["German", "Germany", "Germanic", "Germish"],
+      "answer": 0
+    },
+    {
+      "question": "Look at ___ beautiful flowers!",
+      "options": ["this", "that", "these", "it"],
+      "answer": 2
+    },
+    {
+      "question": "I don't have ___ money with me.",
+      "options": ["some", "any", "no", "a"],
+      "answer": 1
+    },
+    {
+      "question": "The train arrives ___ platform 3.",
+      "options": ["in", "on", "at", "by"],
+      "answer": 2
+    },
+    {
+      "question": "The child is crying because he is ___.",
+      "options": ["happy", "hungry", "excited", "full"],
+      "answer": 1
+    },
+    {
+      "question": "We use our ___ to smell.",
+      "options": ["Eyes", "Ears", "Mouth", "Nose"],
+      "answer": 3
+    },
+    {
+      "question": "The season after summer is ___.",
+      "options": ["Spring", "Winter", "Autumn", "Holiday"],
+      "answer": 2
+    },
+    {
+      "question": "She goes to the gym ___ a week.",
+      "options": ["two", "twice", "second", "double"],
+      "answer": 1
+    },
+    {
+      "question": "This is the book ___ I told you about.",
+      "options": ["who", "which", "whose", "where"],
+      "answer": 1
+    },
+    {
+      "question": "What is the fifth month of the year?",
+      "options": ["April", "May", "June", "July"],
+      "answer": 1
+    },
+    {
+      "question": "You must ___ your homework before you play.",
+      "options": ["finish", "start", "open", "read"],
+      "answer": 0
+    },
+    {
+      "question": "I woke up late, ___ I missed the bus.",
+      "options": ["but", "or", "so", "because"],
+      "answer": 2
+    },
+    {
+      "question": "The test was very ___. I think I passed.",
+      "options": ["difficult", "easy", "long", "bad"],
+      "answer": 1
+    },
+    {
+      "question": "How do you ___ your name?",
+      "options": ["say", "speak", "spell", "tell"],
+      "answer": 2
+    },
+    {
+      "question": "Let's go ___ a walk in the park.",
+      "options": ["to", "for", "with", "on"],
+      "answer": 1
+    },
+    {
+      "question": "He is very good ___ playing the guitar.",
+      "options": ["in", "on", "at", "with"],
+      "answer": 2
+    },
+    {
+      "question": "___ you ever visited another country?",
+      "options": ["Do", "Did", "Have", "Are"],
+      "answer": 2
+    },
+    {
+      "question": "The car is parked ___ of the house.",
+      "options": ["next", "in front", "under", "between"],
+      "answer": 1
+    },
+    {
+      "question": "A pilot is someone ___ flies planes.",
+      "options": ["which", "what", "who", "whose"],
+      "answer": 2
+    },
+    {
+      "question": "The opposite of 'expensive' is ___.",
+      "options": ["Cheap", "Rich", "Poor", "Nice"],
+      "answer": 0
+    },
+    {
+      "question": "I would like a ___ of tea, please.",
+      "options": ["glass", "bottle", "cup", "bowl"],
+      "answer": 2
+    },
+    {
+      "question": "It's a sunny day. Let's go to the ___.",
+      "options": ["mountain", "forest", "beach", "river"],
+      "answer": 2
+    },
+    {
+      "question": "Can I have the ___, please? I want to pay.",
+      "options": ["menu", "bill", "recipe", "card"],
+      "answer": 1
+    },
+    {
+      "question": "What's the capital of Australia?",
+      "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+      "answer": 2
+    },
+    {
+      "question": "He fell down and hurt his ___.",
+      "options": ["leg", "hair", "eye", "nose"],
+      "answer": 0
+    },
+    {
+      "question": "I'm tired. I'm going to ___.",
+      "options": ["eat", "work", "bed", "run"],
+      "answer": 2
+    },
+    {
+      "question": "The plural of 'woman' is ___.",
+      "options": ["womans", "womenses", "womens", "women"],
+      "answer": 3
+    },
+    {
+      "question": "She wore a beautiful ___ to the party.",
+      "options": ["shirt", "dress", "pants", "hat"],
+      "answer": 1
+    },
+    {
+      "question": "I need to go to the ___ to buy some bread.",
+      "options": ["library", "bakery", "bank", "post office"],
+      "answer": 1
+    },
+    {
+      "question": "The opposite of 'empty' is ___.",
+      "options": ["Full", "Open", "Closed", "Clear"],
+      "answer": 0
+    },
+    {
+      "question": "The cat is hiding ___ the table.",
+      "options": ["on", "in", "above", "under"],
+      "answer": 3
+    },
+    {
+      "question": "How ___ sugar do you want in your coffee?",
+      "options": ["many", "much", "few", "lot"],
+      "answer": 1
+    },
+    {
+      "question": "The boy ___ is crying is my little brother.",
+      "options": ["which", "who", "what", "whose"],
+      "answer": 1
+    },
+    {
+      "question": "A ___ has twelve months.",
+      "options": ["Day", "Week", "Month", "Year"],
+      "answer": 3
+    },
+    {
+      "question": "The movie was so ___. I fell asleep.",
+      "options": ["exciting", "funny", "boring", "scary"],
+      "answer": 2
+    },
+    {
+      "question": "What's the weather ___ today?",
+      "options": ["is", "do", "like", "as"],
+      "answer": 2
+    },
+    {
+      "question": "I usually travel to work ___ train.",
+      "options": ["on", "in", "with", "by"],
+      "answer": 3
+    },
+    {
+      "question": "She ___ a letter to her friend last week.",
+      "options": ["writes", "wrote", "written", "is writing"],
+      "answer": 1
+    },
+    {
+      "question": "A lion is the king of the ___.",
+      "options": ["sea", "sky", "jungle", "city"],
+      "answer": 2
+    },
+    {
+      "question": "Don't forget to bring ___ umbrella. It might rain.",
+      "options": ["a", "an", "the", "some"],
+      "answer": 1
+    },
+    {
+      "question": "The baby is sleeping. Please be ___.",
+      "options": ["loud", "fast", "quiet", "happy"],
+      "answer": 2
+    }
+  ],
+  "bot1_reading": [
+    {
+      "text": "The cat is sleeping on the bed. It is very comfortable and warm."
+    },
+    {
+      "text": "My name is Tom. I am ten years old and I live in London."
+    },
+    {
+      "text": "We go to school every day. School starts at eight o'clock."
+    },
+    {
+      "text": "She likes to read books. Her favorite book is about animals."
+    },
+    {
+      "text": "The sun is shining today. It is a beautiful day for a picnic."
+    },
+    {
+      "text": "I have a new bicycle. It is blue and very fast. I ride it to the park."
+    },
+    {
+      "text": "My mother is a teacher. She works at a primary school and loves her students."
+    },
+    {
+      "text": "There is a big supermarket near my house. We buy our food there every weekend."
+    },
+    {
+      "text": "Yesterday, I went to the zoo with my family. I saw lions, monkeys, and elephants."
+    },
+    {
+      "text": "My favorite season is summer because I can go swimming at the beach."
+    },
+    {
+      "text": "Dogs are friendly animals. They are known as 'man's best friend'."
+    },
+    {
+      "text": "The library is a quiet place. You can borrow many interesting books from there."
+    },
+    {
+      "text": "John is a pilot. He flies airplanes to different countries all over the world."
+    },
+    {
+      "text": "We are having a party on Saturday for my sister's birthday. She will be fifteen years old."
+    },
+    {
+      "text": "It is important to eat fruits and vegetables to stay healthy and strong."
+    }
+  ],
+  "bot2_listening": [
+    {
+      "text": "The cat is sleeping on the bed.",
+      "question": "Where is the cat?",
+      "options": ["On the floor", "In the box", "On the bed", "Under the table"],
+      "answer": 2
+    },
+    {
+      "text": "We are watching TV now.",
+      "question": "What are we doing now?",
+      "options": ["Reading a book", "Sleeping", "Watching TV", "Eating"],
+      "answer": 2
+    },
+    {
+      "text": "He is eating an apple.",
+      "question": "What is he doing?",
+      "options": ["Reading a book", "Watching TV", "Sleeping", "Eating"],
+      "answer": 3
+    },
+    {
+      "text": "She is reading a book.",
+      "question": "What is she doing?",
+      "options": ["Eating", "Sleeping", "Reading", "Running"],
+      "answer": 2
+    },
+    {
+      "text": "They are playing football in the park.",
+      "question": "What are they doing?",
+      "options": ["Playing football", "Doing homework", "Cooking", "Studying"],
+      "answer": 0
+    },
+    {
+      "text": "My father is a doctor. He works in a big hospital.",
+      "question": "What is his father's job?",
+      "options": ["Teacher", "Doctor", "Pilot", "Chef"],
+      "answer": 1
+    },
+    {
+      "text": "The train will arrive at 5 PM.",
+      "question": "What time will the train arrive?",
+      "options": ["4 PM", "5 PM", "6 PM", "7 PM"],
+      "answer": 1
+    },
+    {
+      "text": "I bought a blue shirt yesterday.",
+      "question": "What color is the shirt?",
+      "options": ["Red", "Green", "Yellow", "Blue"],
+      "answer": 3
+    },
+    {
+      "text": "Sarah lives in New York.",
+      "question": "Where does Sarah live?",
+      "options": ["London", "Paris", "New York", "Tokyo"],
+      "answer": 2
+    },
+    {
+      "text": "The weather is rainy today. You should take an umbrella.",
+      "question": "How is the weather?",
+      "options": ["Sunny", "Windy", "Snowy", "Rainy"],
+      "answer": 3
+    },
+    {
+      "text": "The meeting is in Room 3 on the second floor.",
+      "question": "Where is the meeting?",
+      "options": ["Room 1", "Room 2", "Room 3", "Room 4"],
+      "answer": 2
+    },
+    {
+      "text": "My favorite fruit is banana.",
+      "question": "What is the speaker's favorite fruit?",
+      "options": ["Apple", "Orange", "Banana", "Grape"],
+      "answer": 2
+    },
+    {
+      "text": "I have to go to the dentist at 10 AM.",
+      "question": "What time is the appointment?",
+      "options": ["9 AM", "10 AM", "11 AM", "12 PM"],
+      "answer": 1
+    },
+    {
+      "text": "This book costs twenty dollars.",
+      "question": "How much is the book?",
+      "options": ["$10", "$15", "$20", "$25"],
+      "answer": 2
+    },
+    {
+      "text": "My brother's name is David. He is a university student.",
+      "question": "What is his brother's name?",
+      "options": ["John", "Mark", "Peter", "David"],
+      "answer": 3
+    },
+    {
+      "text": "The children are making a snowman in the garden.",
+      "question": "What are the children doing?",
+      "options": ["Playing football", "Making a snowman", "Reading books", "Watching TV"],
+      "answer": 1
+    },
+    {
+      "text": "Our flight to Paris leaves at 8:30 in the morning.",
+      "question": "What time does the flight leave?",
+      "options": ["8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM"],
+      "answer": 1
+    },
+    {
+      "text": "The library is closed on Mondays.",
+      "question": "Which day is the library closed?",
+      "options": ["Sunday", "Monday", "Tuesday", "Wednesday"],
+      "answer": 1
+    },
+    {
+      "text": "She can play the piano very well.",
+      "question": "What can she play well?",
+      "options": ["The guitar", "The violin", "The piano", "The drums"],
+      "answer": 2
+    },
+    {
+      "text": "The keys are on the kitchen table.",
+      "question": "Where are the keys?",
+      "options": ["On the desk", "In the car", "On the kitchen table", "In the bag"],
+      "answer": 2
+    },
+    {
+      "text": "He is from Spain, so he speaks Spanish.",
+      "question": "What language does he speak?",
+      "options": ["French", "Italian", "German", "Spanish"],
+      "answer": 3
+    },
+    {
+      "text": "The post office is next to the bank.",
+      "question": "Where is the post office?",
+      "options": ["Opposite the bank", "Behind the bank", "Next to the bank", "Inside the bank"],
+      "answer": 2
+    },
+    {
+      "text": "I lost my red scarf at the park.",
+      "question": "What did the speaker lose?",
+      "options": ["A hat", "A glove", "A red scarf", "A jacket"],
+      "answer": 2
+    },
+    {
+      "text": "The store opens at 9 AM and closes at 8 PM.",
+      "question": "What time does the store close?",
+      "options": ["7 PM", "8 PM", "9 PM", "10 PM"],
+      "answer": 1
+    },
+    {
+      "text": "We are going to the cinema to see a comedy movie.",
+      "question": "What kind of movie are they going to see?",
+      "options": ["Horror", "Action", "Comedy", "Drama"],
+      "answer": 2
+    },
+    {
+      "text": "My son's birthday party is on Saturday.",
+      "question": "When is the birthday party?",
+      "options": ["Friday", "Saturday", "Sunday", "Monday"],
+      "answer": 1
+    },
+    {
+      "text": "The bus stop is in front of the supermarket.",
+      "question": "Where is the bus stop?",
+      "options": ["Behind the supermarket", "Next to the supermarket", "In front of the supermarket", "Inside the supermarket"],
+      "answer": 2
+    },
+    {
+      "text": "For breakfast, I usually have bread and milk.",
+      "question": "What does the speaker have for breakfast?",
+      "options": ["Rice and fish", "Noodles and eggs", "Bread and milk", "Fruit and yogurt"],
+      "answer": 2
+    },
+    {
+      "text": "The teacher is writing on the white board.",
+      "question": "What is the teacher doing?",
+      "options": ["Reading a book", "Talking to students", "Writing on the board", "Using a computer"],
+      "answer": 2
+    },
+    {
+      "text": "My sister is afraid of spiders.",
+      "question": "What is his sister afraid of?",
+      "options": ["Dogs", "Cats", "Snakes", "Spiders"],
+      "answer": 3
+    }
+  ]
+}

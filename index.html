@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Ludo English Game - Online</title>
+  
+  <!-- CSS Modules - Import theo thứ tự -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/animations.css">
+  <link rel="stylesheet" href="styles/lobby.css">
+  <link rel="stylesheet" href="styles/game-board.css">
+  <link rel="stylesheet" href="styles/dice-controls.css">
+  <link rel="stylesheet" href="styles/popups-dialogs.css">
+  <link rel="stylesheet" href="styles/voice-audio.css">
+  <link rel="stylesheet" href="styles/orientation.css">
+  <link rel="stylesheet" href="styles/chat.css">
+  
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <!-- Lobby Screen -->
+  <div id="lobby-screen">
+    <div class="lobby-container">
+      <h1>🎮 Ludo English Game - Online</h1>
+      
+      <!-- Audio Settings Button (Always visible) -->
+      <div style="text-align: right; margin-bottom: 10px;">
+        <button id="lobbySettingsBtn" class="settings-btn-lobby" title="Cài đặt âm thanh">
+          ⚙️ Âm thanh
+        </button>
+      </div>
+      
+      <div class="input-group">
+        <label>Tên của bạn:</label>
+        <input type="text" id="playerNameInput" placeholder="Nhập tên..." />
+      </div>
+      
+      <div class="input-group">
+        <label>Mã phòng:</label>
+        <input type="text" id="roomCodeInput" placeholder="Nhập hoặc để trống để tạo mới" />
+      </div>
+      
+      <div class="input-group">
+        <label>Chọn mức độ:</label>
+        <select id="difficultySelect" class="difficulty-select">
+          <option value="">-- Chọn mức độ --</option>
+          <option value="easy">🟢 Dễ - Cơ bản</option>
+          <option value="medium">🟡 Trung bình</option>
+          <option value="hard">🔴 Khó - Nâng cao</option>
+        </select>
+        <small style="color: #666; margin-top: 5px; display: block;">
+          * Chỉ chủ phòng chọn mức độ khi tạo phòng
+        </small>
+      </div>
+      
+      <div class="button-group">
+        <button id="createRoomBtn" class="primary-btn">Tạo phòng</button>
+        <button id="joinRoomBtn" class="secondary-btn">Tham gia</button>
+      </div>
+      
+      <div id="roomInfo" style="display:none;">
+        <h3>🏠 Phòng: <span id="roomCodeDisplay"></span></h3>
+        <div id="playersList"></div>
+        <button id="startGameBtn" style="display:none;" class="start-btn">Bắt đầu game</button>
+        <button id="leaveRoomBtn" class="leave-btn">Rời phòng</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game-container" style="display:none;">
+    <div class="game-controls">
+      <button id="quitGameBtn" class="quit-game-btn">🚪 Thoát game</button>
+      <div class="voice-controls">
+        <button id="micBtn" class="control-btn" title="Tắt mic">🎤</button>
+        <button id="soundBtn" class="control-btn" title="Tắt âm thanh">🔊</button>
+        <button id="settingsBtn" class="control-btn" title="Cài đặt âm thanh">⚙️</button>
+      </div>
+    </div>
+    
+    <!-- Voice Chat Indicators -->
+    <div id="voiceChatIndicators" class="voice-indicators"></div>
+    
+    <div id="board">
+      <div id="board-center">
+        <div id="dice-area">
+          <div id="dice"></div>
+          <div id="turnDisplay"></div>
+          <div id="turnTimerDisplay">⏱️ 30s</div>
+          <button id="rollBtn" disabled>🎲 Tung xúc xắc</button>
+          <div id="rollResult"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chat Box (for both lobby and game) -->
+  <div id="chatBox" style="display:none;">
+    <div id="chatHeader">
+      💬 Chat
+      <button id="chatToggle">−</button>
+    </div>
+    <div id="chatMessages"></div>
+    <div id="chatInputArea">
+      <input type="text" id="chatInput" placeholder="Nhập tin nhắn..." maxlength="200">
+      <button id="sendChatBtn">📤</button>
+    </div>
+  </div>
+
+  <!-- Orientation Warning (Mobile Portrait Mode) -->
+  <div id="orientationWarning" style="display:none;"></div>
+
+  <!-- Audio Elements -->
+  <audio id="bgmSound" src="audio/bgm.mp3" loop></audio>
+  <audio id="diceSound" src="audio/dice.mp3"></audio>
+  <audio id="moveSound" src="audio/move.mp3"></audio>
+  <audio id="tickSound" src="audio/tick.mp3"></audio>
+  <audio id="timeUpSound" src="audio/buzzer.mp3"></audio>
+  <audio id="correctSound" src="audio/correct.mp3"></audio>
+  <audio id="wrongSound" src="audio/wrong.mp3"></audio>
+
+  <!-- Firebase Configuration -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getDatabase, ref, set, update, onValue, get, push, remove, onDisconnect } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDMi4l1gNPXDCf1KkcJ_fd27XHt0cDmSfI",
+      authDomain: "ludo-english-game.firebaseapp.com",
+      databaseURL: "https://ludo-english-game-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "ludo-english-game",
+      storageBucket: "ludo-english-game.firebasestorage.app",
+      messagingSenderId: "43539880293",
+      appId: "1:43539880293:web:507b279612a84f9a96298c"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+    window.firebaseDB = { db, ref, set, update, onValue, get, push, remove, onDisconnect };
+  </script>
+
+  <!-- JavaScript Modules -->
+  <script type="module" src="js/config.js"></script>
+  <script type="module" src="js/gameState.js"></script>
+  <script type="module" src="js/uiManager.js"></script>
+  <script type="module" src="js/boardManager.js"></script>
+  <script type="module" src="js/gameController.js"></script>
+  <script type="module" src="js/questionHandler.js"></script>
+  <script type="module" src="js/listeningHandler.js"></script>
+  <script type="module" src="js/roomManager.js"></script>
+  <script type="module" src="js/voiceChat.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
